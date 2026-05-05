@@ -1,0 +1,15 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.section-main {
+  padding-top: 55px;
+  text-align: center;
+  min-height: 692px;
+}
