@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "SF ProDisplay";
+  src: url("../fonts/sf-pro-display_regular.woff2");
+}
+
 html {
   box-sizing: border-box;
 }
@@ -8,10 +13,18 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  font-family: "SF ProDisplay", sans-serif;
+  font-weight: 400;
+}
+
 .section-main {
   padding-top: 55px;
   text-align: center;
   min-height: 692px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .iphone-pro {
   background-image: image-set(
@@ -35,4 +48,8 @@ html {
     "../images/hero_iphone_17.webp" type("image/webp"),
     "../images/hero_iphone_17.jpg"
   );
+}
+
+.section-main_ _title {
+  font-family: "SF ProDisplay", sans-serif;
 }
