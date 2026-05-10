@@ -103,6 +103,108 @@ a {
   color: #0071e3;
 }
 
+.collections {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.collections-item {
+  padding-top: 55px;
+  min-height: 580px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.collections-item__title {
+  max-width: 380px;
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 400px;
+  margin: 0 auto 4px;
+}
+
+.collections-item.btn {
+  margin-top: 15px;
+  padding: 10px 16px;
+  font-size: 14px;
+}
+
+.collections-item.btn-box {
+  gap: 14px;
+}
+
+.collections-item__subtext {
+  font-size: 21px;
+  line-height: 25px;
+  max-width: 300px;
+  margin: 0 auto 9px;
+}
+
+.collections-item__text {
+  font-size: 14px;
+  line-height: 18px;
+  color: #6e6e73;
+  margin-bottom:14px ;
+}
+  
+
+.airpods {
+  background-image: image-set(
+    "../images/airpodspro_3.avif" type("image/avif"),
+    "../images/airpodspro_3.webp",
+    "../images/airpodspro_3.jpg"
+  );
+}
+
+.watch-11 {
+  background-image: image-set(
+    "../images/promo_apple_watch_11.avif" type("image/avif"),
+    "../images/promo_apple_watch_11.webp",
+    "../images/promo_apple_watch_11.jpg"
+  );
+}
+
+.watch-se {
+  background-image: image-set(
+    "../images/promo_apple_watch_se.avif" type("image/avif"),
+    "../images/promo_apple_watch_se.webp",
+    "../images/promo_apple_watch_se.jpg"
+  );
+  padding-bottom: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.watch-ultra {
+  background-image: image-set(
+    "../images/promo_apple_watch_ultra3.avif" type("image/avif"),
+    "../images/3.webp",
+    "../images/promo_apple_watch_ultra3.jpg"
+  );
+  color: #f5f5f7;
+}
+
+.carrier-deals {
+  background-image: image-set(
+    "../images/promo_carrier.avif" type("image/avif"),
+    "../images/promo_carrier.webp",
+    "../images/promo_carrier.jpg"
+  );
+}
+
+.trade-in {
+  background-image: image-set(
+    "../images/promo_iphone_tradein.avif" type("image/avif"),
+    "../images/promo_iphone_tradein.webp",
+    "../images/promo_iphone_tradein.jpg"
+  );
+}
+
 @media (max-width: 640px) {
   .section-main {
     min-height: 650px;
