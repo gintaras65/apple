@@ -23,6 +23,10 @@ a {
   display: inline-block;
 }
 
+.ul {
+  list-style: none;
+}
+
 .header {
   background: #161617;
   color: #d0d0d1;
@@ -41,8 +45,18 @@ a {
   align-items: center;
 }
 
+.meniu__list {
+  display: flex;
+  gap: 28px;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header__items {
   list-style: none;
+  display: flex;
+  gap: 28px;
+  align-items: center;
 }
 
 .section-main {
@@ -226,11 +240,75 @@ a {
   );
 }
 
+.btn__meniu {
+  display: none;
+  width: 25px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.btn__meniu ::after,
+.btn__meniu ::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #d0d0d1;
+  left: 0;
+  right: 0;
+}
+
+.btn__meniu ::after {
+  top: 0;
+}
+
+.btn__meniu ::before {
+  bottom: 0;
+}
+
+.btn__meniu span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #d0d0d1;
+  margin-bottom: 0px;
+}
+
 @media (max-width: 1100px) {
   .collections {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 1000px) {
+  .btn__meniu {
+    display: flex;
+  }
+  .meniu {
+    margin-left: auto;
+    margin-right: 28px;
+  }
+  .meniu__list {
+    position: absolute;
+    inset: 0;
+    flex-direction: column;
+    background-color: #161617;
+    justify-content: center;
+    gap: 20px;
+    transform: translateY(-100%);
+  }
+  .logo,
+  .header__items,
+  .btn__meniu {
+    position: relative;
+    z-index: 10;
+}
+
 
 @media (max-width: 640px) {
   .section-main {
