@@ -29,12 +29,20 @@ a {
 }
 
 .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .header__inner {
   padding: 13px 0 16px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.header__items {
+  list-style: none;
 }
 
 .section-main {
