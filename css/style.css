@@ -23,6 +23,20 @@ a {
   display: inline-block;
 }
 
+.header {
+  background: #161617;
+  color: #d0d0d1;
+}
+
+.container {
+}
+
+.header__inner {
+  padding: 13px 0 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .section-main {
   padding-top: 55px;
   text-align: center;
