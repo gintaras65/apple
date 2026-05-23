@@ -307,14 +307,13 @@ a {
     transform: translateY(0);
   }
 
-
   .logo,
   .header__items,
   .btn__meniu {
     position: relative;
     z-index: 10;
+  }
 }
-
 
 @media (max-width: 640px) {
   .section-main {
